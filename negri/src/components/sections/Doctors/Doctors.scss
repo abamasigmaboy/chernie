@@ -1,0 +1,116 @@
+.shestoyblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 1100px;
+
+  .doktoravnutri {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 992px;
+    height: 718px;
+  }
+
+  .doktorashapka {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 197px;
+    height: 66px;
+    text-align: center;
+  }
+
+  .doktoramaly {
+    font-size: 18px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .doktorabolshoy {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+
+  .tochkislayder {
+    display: block;
+  }
+}
+
+.troikavrachsetka {
+  display: grid;
+  grid-template-columns: repeat(3, 317px);
+  justify-content: space-between;
+  align-items: center;
+  width: 992px;
+  height: 538px;
+}
+
+.vrachkarta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 317px;
+  height: 538px;
+  background-color: #BFD2F8;
+
+  .vrachfoto {
+    display: block;
+    max-width: 100%;
+  }
+
+  .vrachopis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 135px;
+    height: 94px;
+    text-align: center;
+  }
+
+  .vrachimya {
+    font-size: 18px;
+    color: #1F2B6C;
+  }
+
+  .vrachspec {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+
+  .vrachsocseti {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 112px;
+    height: 24px;
+  }
+
+  .socikonka {
+    display: block;
+    cursor: pointer;
+  }
+
+  .profilknopka {
+    width: 317px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1F2B6C;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #152258;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.chetvertyiblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 1100px;
+
+  .kartasoderzhanie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 992px;
+    height: 646px;
+  }
+
+  .verhushechka {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 246px;
+    height: 66px;
+    text-align: center;
+  }
+
+  .verhmaly {
+    font-size: 18px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .verhbolshoy {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+}
+
+.dvenadtsatsetka {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 992px;
+  height: 516px;
+}
+
+.napravlenieyacheyka {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 248px;
+  height: 172px;
+  border: 1px solid gray;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #f8fbff;
+  }
+
+  .napravlenieicon {
+    display: block;
+  }
+
+  .napravlenienazvanie {
+    font-size: 16px;
+    color: #1F2B6C;
+    text-align: center;
+  }
+}

@@ -1,0 +1,108 @@
+.pyatyiblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 873px;
+  background-image: url('../../../assets/Group 51.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .zapisvnutri {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1300px;
+    height: 655px;
+  }
+
+  .levayachast {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 407px;
+    height: 173px;
+  }
+
+  .zapistemaglava {
+    font-size: 32px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .zapisopisukha {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+  }
+}
+
+.temnayaforma {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 431px;
+  height: 545px;
+  background-color: #1F2B6C;
+  border-radius: 10px;
+
+  .vvodsetka {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 431px;
+    height: 203px;
+  }
+
+  .polepisma {
+    width: 431px;
+    height: 276px;
+  }
+
+  .tekstpisma {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .knopkaotpravit {
+    width: 431px;
+    height: 66px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F2B6C;
+    background-color: #BFD2F8;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.92;
+    }
+  }
+}
+
+.vvodkletka {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 215.5px;
+  height: 51px;
+  border: 0.2px solid #ffffff;
+
+  .vvodnazvanie {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .vvodstrelochka {
+    display: block;
+  }
+}

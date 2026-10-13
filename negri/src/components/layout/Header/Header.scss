@@ -1,0 +1,74 @@
+.verhnyayashapka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #1F2B6C;
+
+  .navik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1330px;
+    height: 70px;
+  }
+
+  .menushnik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 495px;
+    height: 41px;
+    list-style: none;
+  }
+
+  .punktik {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .ssylkamenyu {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #BFD2F8;
+    }
+  }
+
+  .pravayachast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 223px;
+    height: 45px;
+  }
+
+  .lupaicon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .zapisalovoknopka {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2B6C;
+    background-color: #BFD2F8;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

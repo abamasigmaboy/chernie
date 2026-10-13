@@ -1,0 +1,78 @@
+.vtoroyblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 880px;
+
+  .seredina {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 992px;
+    height: 512px;
+  }
+
+  .tekstbaza {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 658px;
+    height: 201px;
+    text-align: center;
+  }
+
+  .podzagol {
+    font-size: 18px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .temaglav {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+
+  .dlinnytekst {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+  }
+
+  .chitatdalshe {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 139px;
+    height: 22px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tekstdalshe {
+    font-size: 18px;
+    font-weight: 500;
+    color: #159EEC;
+  }
+
+  .strelkavpravo {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+
+  .kartinkabaza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .doktorafoto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}

@@ -1,0 +1,114 @@
+.pervyiblok {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 750px;
+  background-image: url('../../../assets/doctor.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .obolochka {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1100px;
+    height: 480px;
+  }
+
+  .tekstovik {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 580px;
+  }
+
+  .zagolovki {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .sinenkaya {
+    font-size: 22px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .glavnayatema {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.18;
+    color: #1F2B6C;
+  }
+
+  .knopkauslug {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2B6C;
+    background-color: #BFD2F8;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .troikasetka {
+    position: relative;
+    top: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 130px;
+  }
+}
+
+.troikakarton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 316px;
+  height: 130px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  .kartontekst {
+    font-size: 16px;
+  }
+
+  .kartonkartinka {
+    display: block;
+  }
+
+  &.temnykarton {
+    background-color: #1F2B6C;
+    color: #ffffff;
+  }
+
+  &.svetlykarton {
+    background-color: #BFD2F8;
+    color: #1F2B6C;
+  }
+
+  &.goluboykarton {
+    background-color: #159EEC;
+    color: #ffffff;
+  }
+}

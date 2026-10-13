@@ -1,0 +1,37 @@
+import ASSETS from './constants/assets'
+
+export const Photo = {
+  zxc: ASSETS.header.search,
+  doctor: ASSETS.hero.banner,
+  calendar: ASSETS.hero.calendar,
+  guys: ASSETS.hero.team,
+  cash: ASSETS.hero.cash,
+  gandon: ASSETS.about.banner,
+  lucid: ASSETS.services.feature1,
+  dream: ASSETS.services.feature2,
+  med: ASSETS.services.checkup,
+  vec: ASSETS.services.cardiogram,
+  vec1: ASSETS.services.dna,
+  vec2: ASSETS.services.bloodBank,
+  vec3: ASSETS.specialties.icon,
+  vec4: ASSETS.appointment.chevron,
+  toch: ASSETS.doctors.dots,
+  niga: ASSETS.doctors.doctor1,
+  inaaa: ASSETS.doctors.socialIn,
+  face: ASSETS.doctors.socialFb,
+  insta: ASSETS.doctors.socialInsta,
+  travis: ASSETS.doctors.doctor2,
+  show: ASSETS.doctors.doctor3,
+  niggas: ASSETS.news.thumb,
+  balod: ASSETS.news.stats,
+  group1: ASSETS.contacts.emergency,
+  group2: ASSETS.contacts.location,
+  group3: ASSETS.contacts.email,
+  group4: ASSETS.contacts.hours,
+  inaaaa: ASSETS.footer.socialIn,
+  facee: ASSETS.footer.socialFb,
+  instaa: ASSETS.footer.socialInsta,
+  vec5: ASSETS.footer.send,
+}
+
+export default Photo

@@ -1,0 +1,178 @@
+.tretiyblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 742px;
+
+  .uslugisoderzhanie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 992px;
+    height: 614px;
+  }
+
+  .shapkauslug {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 301px;
+    height: 68px;
+    text-align: center;
+  }
+
+  .uslugisinaya {
+    font-size: 23px;
+    font-weight: 700;
+    color: #159EEC;
+  }
+
+  .uslugitema {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2B6C;
+  }
+
+  .bolshayasetka {
+    display: grid;
+    grid-template-columns: 158px 470px 324px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 484px;
+  }
+}
+
+.stolbikmenyu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 110px) 44px;
+  width: 158px;
+  height: 484px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.stolbikyacheyka {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 157px;
+  height: 110px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .yacheykaicon {
+    display: block;
+  }
+
+  .yacheykanazvanie {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &.stolbikaktivnaya {
+    background-color: #1F2B6C;
+    color: #ffffff;
+
+    .yacheykanazvanie {
+      color: #ffffff;
+    }
+  }
+}
+
+.vseuslugiknopka {
+  grid-column: 1 / 2;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 44px;
+  background-color: #1F2B6C;
+  border-radius: 0 0 7px 7px;
+  cursor: pointer;
+
+  .vseuslugitekst {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.sredniytekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 470px;
+  height: 385px;
+
+  .vazhnyzagolovok {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .uslugiopisanie {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+  }
+}
+
+.galochkiblok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 414px;
+  height: 107px;
+}
+
+.dvoynayasetkaspiska {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  list-style-position: inside;
+
+  .spisokpunkt {
+    font-size: 20px;
+    color: #159EEC;
+  }
+
+  .spisokssylka {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.dvefotki {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 324px;
+  height: 484px;
+  margin: 0;
+
+  .odnafotka {
+    display: block;
+  }
+}
