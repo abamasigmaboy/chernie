@@ -2,25 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 1100px;
+  width: 100%;
+  padding: 80px 0;
 
   .doktoravnutri {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 992px;
-    height: 718px;
+    gap: 36px;
+    width: 1100px;
+    max-width: 95%;
   }
 
   .doktorashapka {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    width: 197px;
-    height: 66px;
+    gap: 6px;
     text-align: center;
   }
 
@@ -28,89 +26,124 @@
     font-size: 18px;
     font-weight: 700;
     color: #159EEC;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
 
   .doktorabolshoy {
     font-size: 32px;
     font-weight: 700;
     color: #1F2B6C;
+    font-family: 'Yeseva One', Georgia, serif;
   }
 
   .tochkislayder {
     display: block;
+    margin-top: 15px;
+    cursor: pointer;
   }
+}
+
+.vrachislayder {
+  width: 1100px;
+  max-width: 100%;
+  height: auto !important;
 }
 
 .troikavrachsetka {
-  display: grid;
-  grid-template-columns: repeat(3, 317px);
-  justify-content: space-between;
-  align-items: center;
   width: 992px;
-  height: 538px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .vrachkarta {
+  width: 317px;
+  background-color: #BFD2F8;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 317px;
-  height: 538px;
-  background-color: #BFD2F8;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 
   .vrachfoto {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
     display: block;
-    max-width: 100%;
   }
 
   .vrachopis {
+    width: 100%;
+    padding: 18px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 135px;
-    height: 94px;
-    text-align: center;
+    gap: 8px;
   }
 
   .vrachimya {
     font-size: 18px;
     color: #1F2B6C;
+    font-weight: 600;
   }
 
   .vrachspec {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: #1F2B6C;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .vrachsocseti {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 112px;
-    height: 24px;
+    gap: 16px;
+    margin-top: 4px;
   }
 
   .socikonka {
-    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
     cursor: pointer;
+    display: block;
   }
 
   .profilknopka {
-    width: 317px;
+    width: 100%;
     height: 46px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: #ffffff;
     background-color: #1F2B6C;
     border: none;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 
     &:hover {
       background-color: #152258;
     }
   }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #BFD2F8 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1F2B6C !important;
+  opacity: 1;
 }

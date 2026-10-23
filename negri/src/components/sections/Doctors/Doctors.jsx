@@ -1,34 +1,17 @@
 import ASSETS from '../../../constants/assets'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import './Doctors.scss'
 
+const vrachispisok = [
+  { id: 1, photo: ASSETS.doctors.doctor1, imya: "Doctor's Name", spec: 'Neurology' },
+  { id: 2, photo: ASSETS.doctors.doctor2, imya: "Doctor's Name", spec: 'Neurology' },
+  { id: 3, photo: ASSETS.doctors.doctor3, imya: "Doctor's Name", spec: 'Neurology' },
+]
+
 export default function Doctors() {
-  const doctorsList = [
-    {
-      id: 1,
-      name: "Doctor's Name",
-      specialty: 'Neurology',
-      photo: ASSETS.doctors.doctor1,
-    },
-    {
-      id: 2,
-      name: "Doctor's Name",
-      specialty: 'Neurology',
-      photo: ASSETS.doctors.doctor2,
-    },
-    {
-      id: 3,
-      name: "Doctor's Name",
-      specialty: 'Neurology',
-      photo: ASSETS.doctors.doctor3,
-    },
-  ]
-
-  const socialLinks = [
-    { name: 'LinkedIn', icon: ASSETS.doctors.socialIn },
-    { name: 'Facebook', icon: ASSETS.doctors.socialFb },
-    { name: 'Instagram', icon: ASSETS.doctors.socialInsta },
-  ]
-
   return (
     <section id="doctors" className="shestoyblok">
       <div className="doktoravnutri">
@@ -37,41 +20,47 @@ export default function Doctors() {
           <p className="doktorabolshoy">Our Doctors</p>
         </header>
 
-        <div className="troikavrachsetka">
-          {doctorsList.map((doc) => (
-            <article key={doc.id} className="vrachkarta">
-              <img
-                src={doc.photo}
-                alt={doc.name}
-                className="vrachfoto"
-              />
-
-              <div className="vrachopis">
-                <p className="vrachimya">{doc.name}</p>
-                <h3 className="vrachspec">{doc.specialty}</h3>
-
-                <div className="vrachsocseti">
-                  {socialLinks.map((social, idx) => (
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={false}
+          modules={[Pagination, Navigation]}
+          className="vrachislayder"
+        >
+          {[1, 2, 3].map((num) => (
+            <SwiperSlide key={num}>
+              <div className="troikavrachsetka">
+                {vrachispisok.map((doc) => (
+                  <article key={doc.id} className="vrachkarta">
                     <img
-                      key={idx}
-                      src={social.icon}
-                      alt={social.name}
-                      className="socikonka"
+                      src={doc.photo}
+                      alt={doc.imya}
+                      className="vrachfoto"
                     />
-                  ))}
-                </div>
+                    <div className="vrachopis">
+                      <p className="vrachimya">{doc.imya}</p>
+                      <h3 className="vrachspec">{doc.spec}</h3>
+                      <div className="vrachsocseti">
+                        <img src={ASSETS.doctors.socialIn} alt="LinkedIn" className="socikonka" />
+                        <img src={ASSETS.doctors.socialFb} alt="Facebook" className="socikonka" />
+                        <img src={ASSETS.doctors.socialInsta} alt="Instagram" className="socikonka" />
+                      </div>
+                    </div>
+                    <button type="button" className="profilknopka">
+                      View Profile
+                    </button>
+                  </article>
+                ))}
               </div>
-
-              <button type="button" className="profilknopka">
-                View Profile
-              </button>
-            </article>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
         <img
           src={ASSETS.doctors.dots}
-          alt="Pagination dots"
+          alt="dots"
           className="tochkislayder"
         />
       </div>

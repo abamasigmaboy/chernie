@@ -1,75 +1,64 @@
 import ASSETS from '../../../constants/assets'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
 import './News.scss'
 
-export default function News() {
-  const newsArticles = [
-    {
-      id: 1,
-      date: 'Monday 05, September 2021 | By Author',
-      title: "This Article’s Title goes Here, but not too long.",
-      thumbnail: ASSETS.news.thumb,
-      statsIcon: ASSETS.news.stats,
-    },
-    {
-      id: 2,
-      date: 'Monday 05, September 2021 | By Author',
-      title: "This Article’s Title goes Here, but not too long.",
-      thumbnail: ASSETS.news.thumb,
-      statsIcon: ASSETS.news.stats,
-    },
-    {
-      id: 3,
-      date: 'Monday 05, September 2021 | By Author',
-      title: "This Article’s Title goes Here, but not too long.",
-      thumbnail: ASSETS.news.thumb,
-      statsIcon: ASSETS.news.stats,
-    },
-    {
-      id: 4,
-      date: 'Monday 05, September 2021 | By Author',
-      title: "This Article’s Title goes Here, but not too long.",
-      thumbnail: ASSETS.news.thumb,
-      statsIcon: ASSETS.news.stats,
-    },
-  ]
+const novostispisok = [
+  { id: 1, title: "This Article's Title goes Here, but not too long.", date: 'Monday 05, September 2021 | By Author' },
+  { id: 2, title: "This Article's Title goes Here, but not too long.", date: 'Monday 05, September 2021 | By Author' },
+  { id: 3, title: "This Article's Title goes Here, but not too long.", date: 'Monday 05, September 2021 | By Author' },
+  { id: 4, title: "This Article's Title goes Here, but not too long.", date: 'Monday 05, September 2021 | By Author' },
+]
 
+export default function News() {
   return (
     <section id="news" className="sedmoyblok">
       <div className="novostivnutri">
         <header className="novostishapka">
-          <h2 className="novostimaly">
-            Better information, Better health
-          </h2>
+          <h2 className="novostimaly">Better information, Better health</h2>
           <p className="novostibolshoy">News</p>
         </header>
 
-        <div className="chetyrenovostisetka">
-          {newsArticles.map((article) => (
-            <article key={article.id} className="novostkarta">
-              <img
-                src={article.thumbnail}
-                alt={article.title}
-                className="novostkartinka"
-              />
-
-              <div className="novosttekst">
-                <span className="novostdata">{article.date}</span>
-                <h3 className="novostzagol">
-                  {article.title}
-                </h3>
-                <img
-                  src={article.statsIcon}
-                  alt="Article metrics"
-                  className="novoststatistika"
-                />
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={false}
+          modules={[Pagination, Navigation]}
+          className="novostislayder"
+        >
+          {[1, 2, 3].map((num) => (
+            <SwiperSlide key={num}>
+              <div className="chetyrenovostisetka">
+                {novostispisok.map((item) => (
+                  <article key={item.id} className="novostkarta">
+                    <img
+                      src={ASSETS.news.thumb}
+                      alt={item.title}
+                      className="novostkartinka"
+                    />
+                    <div className="novosttekst">
+                      <span className="novostdata">{item.date}</span>
+                      <h3 className="novostzagol">{item.title}</h3>
+                      <img
+                        src={ASSETS.news.stats}
+                        alt="metrics"
+                        className="novoststatistika"
+                      />
+                    </div>
+                  </article>
+                ))}
               </div>
-            </article>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
         <img
           src={ASSETS.news.dots}
-          alt="Pagination dots"
+          alt="dots"
           className="tochkinovosti"
         />
       </div>
